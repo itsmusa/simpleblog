@@ -1,3 +1,3 @@
 # simpleblog
 
-<p>Hosted on <a href="https://github.com/itsmusa" target="_blank">Heroku</a></p>
+<p>Hosted on <a href="https://cleandjango.herokuapp.com/" target="_blank">Heroku</a></p>
