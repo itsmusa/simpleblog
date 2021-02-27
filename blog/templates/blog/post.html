@@ -1,0 +1,36 @@
+{% extends 'base.html' %}
+{% load static %}
+
+<!-- Page Header -->
+{% block header %}
+  <header class="masthead" style="background-image: url({{ post.thumbnail.url }})">
+    <div class="overlay"></div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+          <div class="post-heading">
+            <h1>{{ post.title }}</h1>
+            <span class="meta">Posted by
+              <a href="https://www.instagram.com/majorbugs/" target="_blank">Musa Magwaza</a>
+              on {{ post.pub_date | date:"F j, Y" }}</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </header>
+{% endblock header %}
+
+<!-- Post Content -->
+{% block content %}  
+<article>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-8 col-md-10 mx-auto">
+
+          {{ post.body | safe }}
+
+        </div>
+      </div>
+    </div>
+  </article>
+{% endblock content %}

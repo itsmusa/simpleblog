@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include 'head.html' %}
+
+<body>
+
+    <!-- Navigation -->
+    {% include 'navigation.html' %}
+
+    <!-- Page Header -->
+    {% block header %}{% endblock header %}
+
+    <!-- Main Content -->
+    {% block content %}{% endblock content %}
+
+<hr>
+
+    {% include 'footer.html' %}
+
+    {% include 'scripts.html' %}
+
+</body>
+
+</html>
